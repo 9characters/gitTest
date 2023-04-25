@@ -6,7 +6,8 @@ while True:
 	ret, frame = cap.read()
 	frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 	frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
-	
+	frame = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
+
 	if not ret:
 		break
 
