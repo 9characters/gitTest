@@ -8,6 +8,7 @@ def edit(frame):
 	return frame
 
 while True:
+	print("Remote changes is here")
 	ret, frame = cap.read()
 	frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 	frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
