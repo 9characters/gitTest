@@ -7,6 +7,8 @@ while True:
 	frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 	frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
 	frame = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
+	
+	cv2.rectangle(frame, (10,10), (30,30), (255,0,0), 2)
 
 	if not ret:
 		break
