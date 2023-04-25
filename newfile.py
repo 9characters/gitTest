@@ -10,10 +10,8 @@ def edit(frame):
 while True:
 	print("Remote changes is here")
 	ret, frame = cap.read()
-	frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-	frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
-	frame = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
-	frame = edit()
+	print(f"Here we edit on the same file")
+	print(f"Lets check it again")
 
 	if not ret:
 		break
