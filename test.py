@@ -2,6 +2,11 @@ import cv2
 
 cap = cv2.VideoCapture(0)
 
+def edit(frame):
+	cv2.rectangle(frame, (10,10), (30,30), (255,0,0), 2)
+	frame = cv2.resize(frame, None, fx=0.9, fy=0.9)
+	return frame
+
 while True:
 	ret, frame = cap.read()
 	frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
