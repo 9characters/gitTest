@@ -22,5 +22,8 @@ while True:
 	if cv2.waitKey(1) == ord("q"):
 		break
 
+
+	print("Changes has been brought here!")
+
 cap.release()
 cv2.destroyAllWindows()
