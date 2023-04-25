@@ -15,6 +15,8 @@ while True:
 	
 	cv2.rectangle(frame, (10,10), (30,30), (255,0,0), 2)
 
+	frame = cv2.resize(frame, None, fx=0.9, fy=0.9)
+
 	if not ret:
 		break
 
